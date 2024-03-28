@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GP16 Pin=A1-21
+Added Net: Name=GP16
+Added Member To Class: ClassName=01_main Member=Component Q1 HC-SR04
+Added Room: Name=01_main
