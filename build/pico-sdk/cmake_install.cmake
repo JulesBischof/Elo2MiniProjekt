@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand/build/pico-sdk/tools/cmake_install.cmake")
-  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand/build/pico-sdk/src/cmake_install.cmake")
-  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand/build/pico-sdk/docs/cmake_install.cmake")
+  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt/build/pico-sdk/tools/cmake_install.cmake")
+  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt/build/pico-sdk/src/cmake_install.cmake")
+  include("C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

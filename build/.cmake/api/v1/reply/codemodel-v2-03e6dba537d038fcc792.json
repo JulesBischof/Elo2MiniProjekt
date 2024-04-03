@@ -1138,7 +1138,7 @@
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-ab790d2cca99d2ef3fbc.json",
+					"jsonFile" : "target-bs2_default-Debug-b5dc842be445f8323f22.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1166,7 +1166,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "fullstand::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fullstand-Debug-7488865e6009d499c9df.json",
+					"jsonFile" : "target-fullstand-Debug-78610350fe0588d25da8.json",
 					"name" : "fullstand",
 					"projectIndex" : 0
 				},
@@ -1190,8 +1190,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand/build",
-		"source" : "C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand"
+		"build" : "C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt/build",
+		"source" : "C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt"
 	},
 	"version" : 
 	{

@@ -6,7 +6,10 @@ project(fullstand_project)
 
 pico_sdk_init()
 
-add_executable(fullstand main.c)
+add_executable(fullstand 
+main.c 
+measure.c 
+measure.h)
 
 pico_enable_stdio_usb(fullstand 1)
 pico_enable_stdio_uart(fullstand 0)

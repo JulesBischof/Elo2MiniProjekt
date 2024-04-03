@@ -2,15 +2,14 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "pico/time.h"
+#include "measure.h"
 
 #define LED_PIN 15
 #define ECHO_PIN 2
 #define TRIGGER_PIN 3
+#define SUBSONIC_VELOCITY_CM_PER_US 0.0343
 
 int main() {
-    int start;
-    int end;
-    int duration;
     stdio_init_all() ;
 
     gpio_init(LED_PIN) ;
@@ -23,35 +22,17 @@ int main() {
     gpio_set_dir(TRIGGER_PIN, GPIO_OUT) ;
     gpio_set_dir(ECHO_PIN, GPIO_IN) ; //gpio_set_input_enabled (uint gpio, bool enabled); //Enable GPIO input.
 
+   
     while(1) {
-// set Trigger
-        gpio_put(TRIGGER_PIN,0);
-        sleep_us(2);
-        gpio_put(TRIGGER_PIN,1); // set trigger pin to High for 10 us
-        sleep_us(10);
-        gpio_put(TRIGGER_PIN,0);
-// measure time
-        while(!gpio_get(ECHO_PIN)); //wait until echo pin is high
-        start = time_us_32();
-        while(gpio_get(ECHO_PIN)); //wait until echo pin is low
-        end = time_us_32();
-        duration = end - start;
 
-// calculate distance
+        set_trigger(TRIGGER_PIN);
         
-
-
-
-
-
-        if(gpio_get(ECHO_PIN)){
-            puts("LED start");
-            gpio_put(LED_PIN,1);
-            sleep_ms(250);
-        }else{
-            puts("LED stop");
-            gpio_put(LED_PIN,0);
-            sleep_ms(250);
-        }    
+        float distance;
+        distance = SUBSONIC_VELOCITY_CM_PER_US*measure_time(ECHO_PIN) / 2.0; 
+        push_measure(distance); 
+            
+        printf("Entfernung: %f cm\n", get_result());
+        sleep_ms(500);
     }
+    return 0;
 }

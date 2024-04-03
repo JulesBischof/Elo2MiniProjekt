@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/fullstand/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/raffa/OneDrive - Hochschule Luzern/4. Semester/ELO2/Miniprojekt/Elo2MiniProjekt/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb
